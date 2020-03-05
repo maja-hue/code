@@ -1,0 +1,11 @@
+Resources:
+ UtilityApi:
+ Type: AWS::Serverless::Api
+ Properties:
+   DefinitionBody:
+     ....
+     paths:
+       cognito/password/policy:
+         get:
+          ...
+          x-amazon-apigateway-integration:
